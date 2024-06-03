@@ -1,0 +1,12 @@
+[Unit]
+Description=exec python for button
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /vm_data/node_MCU/welcome.py
+Restart=always
+RestartSec=10
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target
